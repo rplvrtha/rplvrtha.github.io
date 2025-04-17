@@ -1,315 +1,561 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio: Raditya Putra Loviartha</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Portofolio Saya</title>
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/favico.JPG"
-              alt="Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Raditya Putra Loviartha</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="/" class="header__link"> Home </a>
+  <body class="bg-gray-100 font-sans">
+    <nav class="bg-white shadow-md py-4 fixed top-0 w-full z-10">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center space-x-2">
+            <span class="text-xl font-bold text-gray-800"
+              >Raditya Putra Loviartha</span
+            >
+          </a>
+          <button
+            id="nav-toggle"
+            class="block md:hidden text-gray-800 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            id="nav-menu"
+            class="hidden md:flex space-x-6 absolute md:static bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none"
+          >
+            <li>
+              <a
+                href="#tentang"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                >Tentang</a
+              >
             </li>
-            <li class="header__link-wrapper">
-              <a href="#about" class="header__link">About </a>
+            <li>
+              <a
+                href="#skill"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                >Skill</a
+              >
             </li>
-            <li class="header__link-wrapper">
-              <a href="#projects" class="header__link">
-                Projects
-              </a>
+            <li>
+              <a
+                href="#pengalaman"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                >Pengalaman</a
+              >
+            </li>
+            <li>
+              <a
+                href="#proyek"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                >Proyek</a
+              >
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
         </div>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="/"> Home </a>
-            </li>
+    </nav>
 
-            <li class="header__sm-menu-link">
-              <a href="#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="#projects"> Projects </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">
-          Hello, My name's Raditya Putra Loviartha
+    <section
+      id="hero"
+      class="bg-gray-100 h-screen flex flex-col items-center justify-center"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <img
+          src="./images/favicon.jpeg"
+          alt="Foto Profil"
+          class="rounded-full mx-auto m-5 h-48 w-48 object-cover shadow-lg"
+        />
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">
+          Halo, Saya Raditya Putra Loviartha!
         </h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            I'm a Software Engineering Student at SMK N 5 Surakarta. Currently,
-            I'm doing an internship at Edusoft Center, I really want to
-            experience working with people who are very expert in programming.
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href=".#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
+        <p class="text-lg text-gray-600 mb-6">
+          Seorang Fullstack Developer dengan antusiasme tinggi terhadap dunia
+          IT.
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/rplvrtha"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-full"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="./images/sosmed/linkedin-ico.png"
+              alt="LinkedIn"
+              class="w-6 h-6"
+            />
+          </a>
           <a
             href="https://github.com/rplvrtha"
-            class="home-hero__social-icon-link"
+            target="_blank"
+            class="bg-gray-800 hover:bg-gray-900 text-white p-3 rounded-full"
+            aria-label="GitHub"
           >
             <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
+              src="./images/sosmed/github-ico.png"
+              alt="GitHub"
+              class="w-6 h-6"
             />
           </a>
-        </div>
-        <div class="home-hero__social">
           <a
             href="https://twitter.com/rplvrtha"
-            class="home-hero__social-icon-link"
+            target="_blank"
+            class="bg-blue-400 hover:bg-blue-600 text-white p-3 rounded-full"
+            aria-label="Twitter"
           >
             <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
+              src="./images/sosmed/twitter-ico.png"
+              alt="Twitter"
+              class="w-6 h-6"
             />
           </a>
-        </div>
-        <div class="home-hero__social">
           <a
             href="https://instagram.com/rplvrtha"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            target="_blank"
+            class="bg-pink-500 hover:bg-pink-700 text-white p-3 rounded-full"
+            aria-label="Instagram"
           >
             <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
+              src="./images/sosmed/insta-ico.png"
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="https://medium.com/@rplvrtha"
+            target="_blank"
+            class="bg-black hover:bg-gray-950 text-white p-3 rounded-full"
+            aria-label="Medium"
+          >
+            <img
+              src="./images/sosmed/medium-ico.svg"
+              alt="Medium"
+              class="w-6 h-6"
             />
           </a>
         </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
     </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            I'm a vocational student who wants to become a full-stack developer.
-            I'm very interested in evolving technology and want to keep learning
-            new things. I'm already proficient in several programming languages
-            and am now learning other technologies such as React and Flutter.
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>Raditya Putra Loviartha</strong>
-                and I'm a <strong> Software Engineering Student </strong> at SMK
-                Negeri 5 Surakarta. I've done
-                <strong> remote </strong>
-                on several projects and collaborated with talented people to
-                create
-                <strong> digital products </strong>
-                for both business and consumer use.
-              </p>
-            </div>
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">NodeJS</div>
-              <div class="skills__skill">BunJS</div>
-              <div class="skills__skill">PHP</div>
-              <div class="skills__skill">Laravel</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">Dart</div>
-              <div class="skills__skill">Flutter</div>
-              <div class="skills__skill">GIT</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            The following are some of the projects that I have made from the
-            beginning of entering vocational school until now:
-          </span>
-        </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/kasqu.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">
-                Open Source Project Kasqu Web App
-              </h3>
-              <p class="projects__row-content-desc">
-                It is a simple web application designed to help students and
-                teachers manage classroom finances.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/UangKasSite"
-                class="btn btn--med btn--theme-inv dynamicBgClr"
-                target="_blank"
-                >Code Link</a
-              >
-            </div>
+    <section id="tentang" class="py-16 bg-white">
+      <div class="container mx-auto px-4 mt-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+          Tentang Saya
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img
+              src="./images/image.jpeg"
+              alt="Tentang Saya"
+              class="rounded-md shadow-md"
+            />
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/kasquapp.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">
-                Open Source Project Kasqu Mobile App
-              </h3>
-              <p class="projects__row-content-desc">
-                This is a simple mobile application designed to help students
-                and teachers manage classroom finances.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/UangKasApp"
-                class="btn btn--med btn--theme-inv dynamicBgClr"
-                target="_blank"
-                >Code Link</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/rplvrtha"
-              >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/rplvrtha"
-              >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://instagram.com/rplvrtha"
-              >
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Raditya Putra Loviartha</h4>
-            <p class="main-footer__short-desc">
-              I'm a Software Engineering Student at SMK N 5 Surakarta.
-              Currently, I'm doing an internship at Edusoft Center, I really
-              want to experience working with people who are very expert in
-              programming.
+          <div>
+            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+              Perkenalkan, saya <strong>Raditya Putra Loviartha</strong>,
+              seorang <strong>Full-Stack Developer</strong> dengan semangat
+              tinggi dan dasar yang kokoh dari pendidikan di
+              <strong>SMKN 5 Surakarta</strong>. Pendidikan vokasi yang saya
+              tempuh telah membekali saya dengan pemahaman praktis dan
+              menyeluruh dalam siklus pengembangan aplikasi, baik untuk web
+              maupun mobile.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+              Saya memiliki keahlian dalam pengembangan front-end, termasuk
+              penguasaan HTML, CSS, dan JavaScript, serta ReactJS untuk
+              menciptakan antarmuka pengguna yang menarik dan responsif. Di sisi
+              back-end, saya kompeten dalam menggunakan bahasa pemrograman
+              seperti PHP dan Node.js dengan framework seperti Laravel dan
+              Express. Selain itu, saya juga memiliki pemahaman yang baik
+              tentang pengelolaan database MySQL.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+              Selain pengembangan web, saya juga memiliki keahlian dalam
+              pengembangan aplikasi mobile. Saya familiar dengan Flutter dan
+              Java (Android) serta memiliki pengalaman dalam membangun aplikasi
+              yang berjalan di platform Android. Saya memahami prinsip-prinsip
+              desain antarmuka dan pengalaman pengguna (UI/UX) untuk perangkat
+              mobile.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed text-justify">
+              Dengan pengalaman dalam pengembangan web dan mobile, saya
+              bersemangat untuk terus belajar dan menghadapi tantangan baru
+              dalam dunia teknologi. Saya termotivasi untuk berkontribusi dalam
+              tim yang dinamis dan menerapkan keahlian saya dalam proyek-proyek
+              yang inovatif dan berdampak positif. Saya siap untuk
+              mengaplikasikan pengetahuan dan keterampilan full-stack saya guna
+              menghasilkan solusi aplikasi yang berkualitas tinggi di berbagai
+              platform.
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2024. Made by
-          <a rel="noreferrer" target="_blank" href="https://github.com/rplvrtha"
-            >Raditya Putra Loviartha</a
+    <section id="skill" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 mt-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+          Skill Pemrograman
+        </h2>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center"
+        >
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/html.svg"
+              alt="HTML"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/css.svg"
+              alt="CSS"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/javascript.svg"
+              alt="JavaScript"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/php.svg"
+              alt="PHP"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">PHP</h3>
+            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/java.svg"
+              alt="Java"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Java</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/dart.svg"
+              alt="Dart"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Dart</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/laravel.svg"
+              alt="Laravel"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Laravel</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/react.svg"
+              alt="React"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">React</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/android.svg"
+              alt="Android"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Android</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/nodejs.svg"
+              alt="Node.js"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Node.js</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/sql.svg"
+              alt="SQL"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">SQL</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <img
+              src="./images/skill/flutter.svg"
+              alt="Flutter"
+              class="w-12 h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Flutter</h3>
+            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pengalaman" class="py-16 bg-white mb-16">
+      <div class="container mx-auto px-4 mt-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+          Pengalaman Saya
+        </h2>
+        <div class="space-y-8">
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">
+              Mengikuti Pelatihan Vokasi UGM (2023 - 2024)
+            </h3>
+            <p class="text-gray-700 mt-4">
+              Saya memperoleh keterampilan lebih lanjut dalam membuat aplikasi
+              Android, Laravel, dan ReactJS.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">
+              Mengikuti Pelatihan “IOT: Smart Home” (2023)
+            </h3>
+            <p class="text-gray-700 mt-4">
+              Saya memperoleh keterampilan lebih lanjut dalam membuat smart home
+              yang dikombinasikan dengan aplikasi Android.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">
+              Mengikuti LKS (Lomba Kompetensi Siswa) Tingkat Kota Surakarta
+              (Maret 2024)
+            </h3>
+            <p class="text-gray-700 mt-4">
+              Saya meraih juara 3 dalam mata lomba "IT Software Solution for
+              Business".
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">
+              Magang di Edusoft Center (September 2024 — Februari 2025)
+            </h3>
+            <p class="text-gray-700 mt-4">
+              Selama magang di Edusoft Center, saya mempelajari berbagai hal
+              seperti membuat blog, dasar-dasar MVP (Minimum Viable Product),
+              dan blockchain. Saya juga memahami perbedaan antara pull marketing
+              dan push marketing, serta konsep 5A dalam pemasaran (Awareness,
+              Appeal, Ask, Act, Advocate). Selain itu, saya mempelajari
+              jenis-jenis konten berdasarkan tujuan dan emosi, seperti
+              menghibur, menginspirasi, mendidik, dan meyakinkan.
+            </p>
+            <p class="text-gray-700 mt-4">
+              Saya juga belajar membuat Rest API dengan PHP, memahami lebih
+              dalam tentang framework Flutter, serta mempelajari struktur
+              kontrol, fungsi, formulir, validasi data, koneksi database, dan
+              CRUD menggunakan PHP. Salah satu proyek yang saya kerjakan adalah
+              membuat website portofolio menggunakan PHP dan mengelola konten
+              sosial media UMKM yaitu “Labbaik Aqiqah”.
+            </p>
+            <p class="text-gray-700 mt-4">
+              Selain itu, saya juga pernah menjadi asisten manajer untuk
+              keperluan seminar dan penyelesaian e-learning serta e-commerce di
+              SMKN 1 Gesi, Sragen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 mt-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+          Proyek Saya
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-md shadow-md overflow-hidden">
+            <img
+              src="./images/project/kasqu.jpeg"
+              alt="KasQu
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Website KasQu
+              </h3>
+              <p class="text-gray-600 text-justify text-sm mb-3">
+                Ini adalah sebuah website untuk pangelolaan kas di bagian
+                administrator yang dihubungkan menggunakan Rest API.
+              </p>
+              <a href="https://github.com/rplvrtha/UangKasSite" class="text-blue-500 hover:text-blue-700"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-md shadow-md overflow-hidden">
+            <img
+              src="./images/project/kasquapp.jpeg"
+              alt="KasQu
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Aplikasi KasQu
+              </h3>
+              <p class="text-gray-600 text-justify text-sm mb-3">
+                Ini adalah versi user yang dibuat dalam bentuk aplikasi mobile
+                yang dihubungkan dengan Rest API.
+              </p>
+              <a href="https://github.com/rplvrtha/UangKasApp" class="text-blue-500 hover:text-blue-700"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-md shadow-md overflow-hidden">
+            <img
+              src="./images/project/sipadu.jpeg"
+              alt="SIPADU"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                SIPADU: Sistem Pengaduan dan Perijinan
+              </h3>
+              <p class="text-gray-600 text-justify text-sm mb-3">
+                Aplikasi ini adalah aplikasi yang akan digunakan oleh SMKN 5
+                Surakarta untuk mempermudah siswa dan guru untuk melakukan,
+                merespon dan merekap izin serta aduan.
+              </p>
+              <a
+                href="https://rpl5solo.net"
+                class="text-blue-500 hover:text-blue-700"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-md shadow-md overflow-hidden">
+            <img
+              src="./images/project/gaiaart.jpeg"
+              alt="GaiaArt"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">GaiaArt</h3>
+              <p class="text-gray-600 text-justify text-sm mb-3">
+                Aplikasi ini adalah aplikasi galeri online yang dibuat dengan
+                flutter dan menggunakan Rest API untuk menghubungkan antara
+                aplikasi dengan database.
+              </p>
+              <a
+                href="https://github.com/rplvrtha/galeriApp"
+                class="text-blue-500 hover:text-blue-700"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-8 text-white">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0">
+        <div class="text-center md:text-left">
+          <h2 class="text-xl font-bold mb-2">Terima Kasih Telah Mengunjungi!</h2>
+          <p class="text-gray-400 text-sm">
+            &copy; <span id="current-year"></span> Raditya Putra Loviartha. Semua Hak Cipta Dilindungi.
+          </p>
+        </div>
+        <div class="flex justify-center md:justify-end space-x-4">
+          <a
+            href="https://www.linkedin.com/in/rplvrtha"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-full"
+            aria-label="LinkedIn"
           >
+            <img src="./images/sosmed/linkedin-ico.png" alt="LinkedIn" class="w-6 h-6" />
+          </a>
+          <a
+            href="https://github.com/rplvrtha"
+            target="_blank"
+            class="bg-gray-800 hover:bg-gray-900 text-white p-3 rounded-full"
+            aria-label="GitHub"
+          >
+            <img src="./images/sosmed/github-ico.png" alt="GitHub" class="w-6 h-6" />
+          </a>
+          <a
+            href="https://twitter.com/rplvrtha"
+            target="_blank"
+            class="bg-blue-400 hover:bg-blue-600 text-white p-3 rounded-full"
+            aria-label="Twitter"
+          >
+            <img src="./images/sosmed/twitter-ico.png" alt="Twitter" class="w-6 h-6" />
+          </a>
+          <a
+            href="https://instagram.com/rplvrtha"
+            target="_blank"
+            class="bg-pink-500 hover:bg-pink-700 text-white p-3 rounded-full"
+            aria-label="Instagram"
+          >
+            <img src="./images/sosmed/insta-ico.png" alt="Instagram" class="w-6 h-6" />
+          </a>
+          <a
+            href="https://medium.com/@rplvrtha"
+            target="_blank"
+            class="bg-black hover:bg-gray-950 text-white p-3 rounded-full"
+            aria-label="Medium"
+          >
+            <img src="./images/sosmed/medium-ico.svg" alt="Medium" class="w-6 h-6" />
+          </a>
         </div>
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <button
+      id="scroll-to-top"
+      class="hidden fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+      aria-label="Scroll to top"
+    >
+      <img
+        src="images/scroll.svg"
+        alt="scroll"
+        class="w-6 h-6"
+        style="filter: invert(1)"
+      />
+    </button>
+    <script src="./js/script.js"></script>
+    <script>
+      // Set current year dynamically
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
