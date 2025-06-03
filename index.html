@@ -11,18 +11,18 @@
     />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100 font-sans">
-    <nav class="bg-white shadow-md py-4 fixed top-0 w-full z-10">
+  <body class="bg-gray-100 font-sans dark:bg-gray-800 dark:text-gray-200">
+    <nav class="bg-white dark:bg-gray-800 shadow-md py-4 fixed top-0 w-full z-10">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
           <a href="#" class="flex items-center space-x-2">
-            <span class="text-xl font-bold text-gray-800"
+            <span class="text-xl font-bold text-gray-800 dark:text-white"
               >Raditya Putra Loviartha</span
             >
           </a>
           <button
             id="nav-toggle"
-            class="block md:hidden text-gray-800 focus:outline-none"
+            class="block md:hidden text-gray-800 dark:text-white focus:outline-none"
             aria-label="Toggle navigation"
           >
             <svg
@@ -42,47 +42,47 @@
           </button>
           <ul
             id="nav-menu"
-            class="hidden md:flex space-x-6 absolute md:static bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none"
+            class="hidden md:flex space-x-6 absolute md:static dark:bg-gray-800 bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none"
           >
             <li>
               <a
                 href="#tentang"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Tentang</a
               >
             </li>
             <li>
               <a
                 href="#pendidikan"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Pendidikan</a
               >
             </li>
             <li>
               <a
                 href="#skill"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Skill</a
               >
             </li>
             <li>
               <a
                 href="#pengalaman"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Pengalaman</a
               >
             </li>
             <li>
               <a
                 href="#organisasi"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Organisasi</a
               >
             </li>
             <li>
               <a
                 href="#proyek"
-                class="block text-gray-600 hover:text-gray-800 px-4 py-2"
+                class="block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white px-4 py-2"
                 >Proyek</a
               >
             </li>
@@ -93,7 +93,7 @@
 
     <section
       id="hero"
-      class="bg-gray-100 h-screen flex flex-col items-center justify-center"
+      class="bg-gray-100 dark:bg-gray-900 h-screen flex flex-col items-center justify-center"
     >
       <div class="container mx-auto px-4 text-center">
         <img
@@ -101,10 +101,10 @@
           alt="Foto Profil"
           class="rounded-full mx-auto m-5 h-48 w-48 object-cover shadow-lg"
         />
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-2">
           Halo, Saya Raditya Putra Loviartha!
         </h1>
-        <p class="text-lg text-gray-600 mb-6">
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
           Seorang Full-Stack Developer dengan antusiasme tinggi terhadap dunia
           IT.
         </p>
@@ -170,12 +170,25 @@
             />
           </a>
         </div>
+        <div class="mt-6 flex justify-center">
+          <button
+            id="theme-toggle"
+            class="w-48 h-12 rounded-md bg-black dark:bg-white focus:outline-none flex items-center justify-center"
+          >
+            <span
+              id="theme-label"
+              class="text-lg font-bold text-white dark:text-gray-900"
+            >
+              Dark Mode
+            </span>
+          </button>
+        </div>
       </div>
     </section>
 
-    <section id="tentang" class="py-16 bg-white">
+    <section id="tentang" class="py-16 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Tentang Saya
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -187,7 +200,7 @@
             />
           </div>
           <div>
-            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+            <p class="text-gray-700 dark:text-white leading-relaxed mb-6 text-justify">
               Perkenalkan, saya <strong>Raditya Putra Loviartha</strong>,
               seorang <strong>Full-Stack Developer</strong> dengan semangat
               tinggi dan dasar yang kokoh dari pendidikan di
@@ -197,7 +210,7 @@
               maupun mobile.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+            <p class="text-gray-700 dark:text-white leading-relaxed mb-6 text-justify">
               Saya memiliki keahlian dalam pengembangan front-end, termasuk
               penguasaan HTML, CSS, dan JavaScript, serta ReactJS untuk
               menciptakan antarmuka pengguna yang menarik dan responsif. Di sisi
@@ -207,7 +220,7 @@
               tentang pengelolaan database MySQL.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+            <p class="text-gray-700 dark:text-white leading-relaxed mb-6 text-justify">
               Selain pengembangan web, saya juga memiliki keahlian dalam
               pengembangan aplikasi mobile. Saya familiar dengan Flutter dan
               Java (Android) serta memiliki pengalaman dalam membangun aplikasi
@@ -216,7 +229,7 @@
               mobile.
             </p>
 
-            <p class="text-gray-700 leading-relaxed text-justify">
+            <p class="text-gray-700 dark:text-white leading-relaxed mb-6 text-justify">
               Dengan pengalaman dalam pengembangan web dan mobile, saya
               bersemangat untuk terus belajar dan menghadapi tantangan baru
               dalam dunia teknologi. Saya termotivasi untuk berkontribusi dalam
@@ -231,37 +244,37 @@
       </div>
     </section>
 
-    <section id="pendidikan" class="py-16 bg-gray-100">
+    <section id="pendidikan" class="py-16 bg-gray-100 dark:bg-gray-900">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Riwayat Pendidikan
         </h2>
         <div class="space-y-8">
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               SMK Negeri 5 Surakarta (2022-2025)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Jurusan Rekayasa Perangkat Lunak. Fokus pada pengembangan aplikasi
               web dan mobile, pengelolaan database, serta penguasaan teknologi
               modern seperti Laravel, React, dan Flutter.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               SMP Negeri 1 Banyudono (2019-2022)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Masa pendidikan ini berlangsung di tengah pandemi COVID-19,
               sehingga sebagian besar kegiatan dilakukan secara daring. Tidak
               ada lomba atau organisasi yang diadakan selama periode ini.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               SD Negeri 1 Bangak (2013-2019)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Dasar pendidikan formal dengan fokus pada pengembangan
               keterampilan dasar akademik dan sosial. Aktif dalam berbagai
               kegiatan sekolah seperti lomba hadrah atau rebana.
@@ -271,224 +284,224 @@
       </div>
     </section>
 
-    <section id="skill" class="py-16 bg-white">
+    <section id="skill" class="py-16 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Skill Pemrograman
         </h2>
         <div
           class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center"
         >
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/html.svg"
               alt="HTML"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
-            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">HTML</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Lanjut</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/css.svg"
               alt="CSS"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
-            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">CSS</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Lanjut</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/javascript.svg"
               alt="JavaScript"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
-            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">JavaScript</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Lanjut</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/php.svg"
               alt="PHP"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">PHP</h3>
-            <p class="text-gray-600 mt-2">Tingkat Lanjut</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">PHP</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Lanjut</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/java.svg"
               alt="Java"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Java</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Java</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/dart.svg"
               alt="Dart"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Dart</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Dart</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/laravel.svg"
               alt="Laravel"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Laravel</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Laravel</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/react.svg"
               alt="React"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">React</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">React</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/android.svg"
               alt="Android"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Android</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Android</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/nodejs.svg"
               alt="Node.js"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Node.js</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Node.js</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/sql.svg"
               alt="SQL"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">SQL</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">SQL</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
             <img
               src="./images/skill/flutter.svg"
               alt="Flutter"
-              class="w-12 h-12 mx-auto mb-4"
+              class="w-12 h-12 mx-auto mb-4 dark:invert"
             />
-            <h3 class="text-xl font-semibold text-gray-800">Flutter</h3>
-            <p class="text-gray-600 mt-2">Tingkat Menengah</p>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Flutter</h3>
+            <p class="text-gray-600 dark:text-white mt-2">Tingkat Menengah</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pengalaman" class="py-16 bg-gray-100">
+    <section id="pengalaman" class="py-16 bg-gray-100 dark:bg-gray-900">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Pengalaman Saya
         </h2>
         <div class="space-y-8">
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Mengikuti Seminar dan Lokakarya Pramuka di UNS (2022)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Saya mengikuti seminar dan lokakarya pramuka di Universitas
               Sebelas Maret (UNS), yang membahas pengembangan keterampilan
               kepramukaan dan kepemimpinan.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Menjadi Pimpinan Kontingen di Lintas Budaya Kota Surakarta (2022)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Saya berkesempatan menjadi pimpinan kontingen dalam acara Lintas
               Budaya Kota Surakarta tahun 2022, yang bertujuan untuk mempererat
               hubungan antarbudaya melalui kegiatan seni dan budaya.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Paskibra SMKN 5 Surakarta (2022)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Menjadi anggota Paskibra SMKN 5 Surakarta pada peringatan HUT RI
               ke-77, bertugas dalam upacara pengibaran bendera.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-justify text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-justify text-gray-800 dark:text-white">
               Mengikuti Pelatihan Vokasi UGM (2023 - 2024)
             </h3>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Saya memperoleh keterampilan lebih lanjut dalam membuat aplikasi
               Android, Laravel, dan ReactJS.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Menyelesaikan SKU Tingkat Bantara dan Menjadi Dewan Ambalan (2023)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Menyelesaikan Syarat Kecakapan Umum (SKU) tingkat Bantara dan
               dipercaya menjadi anggota Dewan Ambalan, berperan dalam
               pengelolaan kegiatan kepramukaan di tingkat sekolah.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-justify text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-justify text-gray-800 dark:text-white">
               Mengikuti Pelatihan “IOT: Smart Home” (2023)
             </h3>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Saya memperoleh keterampilan lebih lanjut dalam membuat smart home
               yang dikombinasikan dengan aplikasi Android.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-justify text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-justify text-gray-800 dark:text-white">
               Mengikuti Lomba Kompetensi Siswa (LKS) Tingkat Kota Surakarta
               (Maret 2024)
             </h3>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Saya meraih juara 3 dalam mata lomba "IT Software Solution for
               Business".
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               PAM Idul Fitri, Natal, dan Tahun Baru (2023 dan 2024)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Berpartisipasi dalam kegiatan pengamanan (PAM) pada Idul Fitri,
               Natal, dan Tahun Baru, membantu menjaga ketertiban dan keamanan
               masyarakat.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Lomba PPB Variasi dan Semaphore Dance (2024)
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               Mengikuti lomba Peraturan Baris-Berbaris (PPB) Variasi dan
               Semaphore Dance di Ganesha Scout Competition #5, menunjukkan
               keterampilan dalam baris-berbaris dan komunikasi semaphore.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-justify text-gray-800">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-justify text-gray-800 dark:text-white">
               Magang di Edusoft Center (September 2024 — Februari 2025)
             </h3>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Selama magang di Edusoft Center, saya mempelajari berbagai hal
               seperti membuat blog, dasar-dasar MVP (Minimum Viable Product),
               dan blockchain. Saya juga memahami perbedaan antara pull marketing
@@ -497,7 +510,7 @@
               jenis-jenis konten berdasarkan tujuan dan emosi, seperti
               menghibur, menginspirasi, mendidik, dan meyakinkan.
             </p>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Saya juga belajar membuat Rest API dengan PHP, memahami lebih
               dalam tentang framework Flutter, serta mempelajari struktur
               kontrol, fungsi, formulir, validasi data, koneksi database, dan
@@ -505,7 +518,7 @@
               membuat website portofolio menggunakan PHP dan mengelola konten
               sosial media UMKM yaitu “Labbaik Aqiqah”.
             </p>
-            <p class="text-gray-700 text-justify mt-4">
+            <p class="text-gray-700 dark:text-white text-justify mt-4">
               Selain itu, saya juga pernah menjadi asisten manajer untuk
               keperluan seminar dan penyelesaian e-learning serta e-commerce di
               SMKN 1 Gesi, Sragen.
@@ -515,27 +528,27 @@
       </div>
     </section>
 
-    <section id="organisasi" class="py-16 bg-white">
+    <section id="organisasi" class="py-16 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Pengalaman Organisasi
         </h2>
         <div class="space-y-8">
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               OSIS - Sekbid Kebugaran Jasmani dan Daya Kreasi
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               SMKN 5 Surakarta (2023 - 2024). Bertanggung jawab atas kegiatan
               yang mendukung kebugaran jasmani siswa, seperti classmeting dan
               ekstrakulikuler olahraga.
             </p>
           </div>
-          <div class="bg-white p-6 rounded-md shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
               Pramuka - Sie Teknik Kepramukaan
             </h3>
-            <p class="text-gray-700 mt-4 text-justify">
+            <p class="text-gray-700 dark:text-white mt-4 text-justify">
               SMKN 5 Surakarta (2023 - 2024). Berperan sebagai Sie Teknik
               Kepramukaan, membantu dalam persiapan dan pelaksanaan kegiatan
               teknis seperti perkemahan dan pelatihan kepramukaan.
@@ -545,61 +558,61 @@
       </div>
     </section>
 
-    <section id="proyek" class="py-16 bg-gray-100">
+    <section id="proyek" class="py-16 bg-gray-100 dark:bg-gray-900">
       <div class="container mx-auto px-4 mt-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10 text-center">
           Proyek Saya
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="./images/project/kasqu.jpeg" alt="KasQu class="w-full h-48
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
+            <img src="./images/project/kasqu.jpeg" alt="KasQu" class="w-full h-48
             object-cover" />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 Website KasQu
               </h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Ini adalah sebuah website untuk pangelolaan kas di bagian
                 administrator yang dihubungkan menggunakan Rest API.
               </p>
               <a
                 href="https://github.com/rplvrtha/UangKasSite"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
           </div>
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="./images/project/kasquapp.jpeg" alt="KasQu class="w-full
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
+            <img src="./images/project/kasquapp.jpeg" alt="KasQu" class="w-full
             h-48 object-cover" />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 Aplikasi KasQu
               </h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Ini adalah versi user yang dibuat dalam bentuk aplikasi mobile
                 yang dihubungkan dengan Rest API.
               </p>
               <a
                 href="https://github.com/rplvrtha/UangKasApp"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
           </div>
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
             <img
               src="./images/project/sipadu.jpeg"
               alt="SIPADU"
               class="w-full h-48 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 SIPADU: Sistem Pengaduan dan Perijinan
               </h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Aplikasi ini adalah aplikasi yang akan digunakan oleh SMKN 5
                 Surakarta untuk mempermudah siswa dan guru untuk melakukan,
                 merespon dan merekap izin serta aduan.
@@ -607,20 +620,20 @@
               <a
                 href="https://rpl5solo.net"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
           </div>
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
             <img
               src="./images/project/gaiaart.jpeg"
               alt="GaiaArt"
               class="w-full h-48 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">GaiaArt</h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">GaiaArt</h3>
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Aplikasi ini adalah aplikasi galeri online yang dibuat dengan
                 flutter dan menggunakan Rest API untuk menghubungkan antara
                 aplikasi dengan database.
@@ -628,20 +641,20 @@
               <a
                 href="https://github.com/rplvrtha/galeriApp"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
           </div>
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
             <img
               src="./images/project/rapulo.jpeg"
               alt="Rapulo"
               class="w-full h-48 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Rapulo</h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Rapulo</h3>
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Rapulo adalah sebuah framework PHP ringan yang sedang saya
                 kembangkan untuk mempercepat dan menyederhanakan pengembangan
                 aplikasi web berbasis PHP dengan pendekatan ringkas dan efisien.
@@ -651,22 +664,22 @@
               <a
                 href="https://github.com/rplvrtha/Rapulo"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
           </div>
-          <div class="bg-white rounded-md shadow-md overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-md overflow-hidden">
             <img
               src="./images/project/retail.png"
               alt="Toko Retail"
               class="w-full h-48 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 Toko Retail
               </h3>
-              <p class="text-gray-600 text-justify text-sm mb-3">
+              <p class="text-gray-600 dark:text-white text-justify text-sm mb-3">
                 Aplikasi ini adalah aplikasi hasil dari Ujian Kompetensi
                 Keahlian saya yang saya kerjakan ±3 jam dari alokasi waktu 7
                 jam. Aplikasi ini bertujuan untuk mempermudah kasir dalam
@@ -675,7 +688,7 @@
               <a
                 href="https://github.com/rplvrtha/TokoRetail"
                 target="_blank"
-                class="text-blue-500 hover:text-blue-700"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                 >Lihat Detail</a
               >
             </div>
