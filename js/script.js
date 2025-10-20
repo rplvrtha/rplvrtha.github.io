@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- 0. Inisialisasi Animasi (AOS) ---
   AOS.init({
-    duration: 800, // Durasi animasi dalam ms
-    once: true, // Animasi hanya berjalan sekali
-    offset: 50, // Memicu animasi sedikit lebih awal
+    duration: 800,
+    once: true,
+    offset: 50,
   });
 
-  // --- 1. Toggle Menu Navigasi Mobile ---
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
 
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navMenu.classList.toggle("hidden");
     });
 
-    // Menutup menu saat link di-klik (untuk mobile)
     navMenu.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navMenu.classList.add("hidden");
@@ -23,12 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- 2. Logika Mode Gelap (Theme Toggle) DIPERBAIKI ---
   const themeToggleButton = document.getElementById("theme-toggle");
   const sunIcon = document.getElementById("theme-icon-sun");
   const moonIcon = document.getElementById("theme-icon-moon");
 
-  // Fungsi untuk mengatur tema (HANYA MENGUBAH <html> DAN IKON)
   const setTheme = (isDark) => {
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -43,26 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Cek tema saat halaman dimuat
-  // Default ke 'dark' jika tidak ada di localStorage ATAU jika sistem user prefer dark
   const prefersDark =
     localStorage.theme === "dark" ||
     (!("theme" in localStorage) &&
       window.matchMedia("(prefers-color-scheme: dark)").matches);
 
-  setTheme(prefersDark); // Atur tema saat halaman pertama kali dibuka
+  setTheme(prefersDark);
 
-  // Event listener untuk tombol
   if (themeToggleButton) {
     themeToggleButton.addEventListener("click", () => {
-      // Cek tema SAAT INI lalu ganti ke lawannya
       const isCurrentlyDark =
         document.documentElement.classList.contains("dark");
       setTheme(!isCurrentlyDark);
     });
   }
 
-  // --- 3. Tombol Scroll to Top ---
   const scrollToTopButton = document.getElementById("scroll-to-top");
 
   if (scrollToTopButton) {
@@ -84,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- 4. Tahun Dinamis di Footer ---
   const currentYearSpan = document.getElementById("current-year");
   if (currentYearSpan) {
     currentYearSpan.textContent = new Date().getFullYear();
