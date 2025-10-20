@@ -1,57 +1,92 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // --- 0. Inisialisasi Animasi (AOS) ---
+  AOS.init({
+    duration: 800, // Durasi animasi dalam ms
+    once: true, // Animasi hanya berjalan sekali
+    offset: 50, // Memicu animasi sedikit lebih awal
+  });
+
+  // --- 1. Toggle Menu Navigasi Mobile ---
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
-  const scrollToTopButton = document.getElementById("scroll-to-top");
-  const themeToggle = document.getElementById("theme-toggle");
-  const themeLabel = document.getElementById("theme-label");
-  const htmlElement = document.documentElement; // Reference to <html> tag
 
-  // Apply saved theme from localStorage or device preference
-  const savedTheme = localStorage.getItem("theme");
-  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
 
-  if (savedTheme) {
-    htmlElement.classList.toggle("dark", savedTheme === "dark");
-    themeLabel.textContent = savedTheme === "dark" ? "Light Mode" : "Dark Mode";
-  } else {
-    htmlElement.classList.toggle("dark", prefersDarkMode);
-    themeLabel.textContent = prefersDarkMode ? "Light Mode" : "Dark Mode";
+    // Menutup menu saat link di-klik (untuk mobile)
+    navMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.add("hidden");
+      });
+    });
   }
 
-  // Toggle navigation menu
-  navToggle.addEventListener("click", () => navMenu.classList.toggle("hidden"));
+  // --- 2. Logika Mode Gelap (Theme Toggle) DIPERBAIKI ---
+  const themeToggleButton = document.getElementById("theme-toggle");
+  const sunIcon = document.getElementById("theme-icon-sun");
+  const moonIcon = document.getElementById("theme-icon-moon");
 
-  // Show/hide scroll-to-top button
-  window.addEventListener("scroll", () => {
-    scrollToTopButton.classList.toggle("hidden", window.scrollY <= 200);
-  });
+  // Fungsi untuk mengatur tema (HANYA MENGUBAH <html> DAN IKON)
+  const setTheme = (isDark) => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      sunIcon.classList.remove("hidden");
+      moonIcon.classList.add("hidden");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      sunIcon.classList.add("hidden");
+      moonIcon.classList.remove("hidden");
+      localStorage.setItem("theme", "light");
+    }
+  };
 
-  // Smooth scroll for navigation links
-  document.querySelectorAll('nav a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      document
-        .querySelector(link.getAttribute("href"))
-        .scrollIntoView({ behavior: "smooth" });
-      if (window.innerWidth < 768) navMenu.classList.add("hidden");
+  // Cek tema saat halaman dimuat
+  // Default ke 'dark' jika tidak ada di localStorage ATAU jika sistem user prefer dark
+  const prefersDark =
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+  setTheme(prefersDark); // Atur tema saat halaman pertama kali dibuka
+
+  // Event listener untuk tombol
+  if (themeToggleButton) {
+    themeToggleButton.addEventListener("click", () => {
+      // Cek tema SAAT INI lalu ganti ke lawannya
+      const isCurrentlyDark =
+        document.documentElement.classList.contains("dark");
+      setTheme(!isCurrentlyDark);
     });
-  });
+  }
 
-  // Scroll to top functionality
-  scrollToTopButton.addEventListener("click", () =>
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  );
+  // --- 3. Tombol Scroll to Top ---
+  const scrollToTopButton = document.getElementById("scroll-to-top");
 
-  // Set current year dynamically
-  document.getElementById("current-year").textContent =
-    new Date().getFullYear();
+  if (scrollToTopButton) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopButton.classList.remove("hidden");
+        scrollToTopButton.classList.add("opacity-100");
+      } else {
+        scrollToTopButton.classList.add("hidden");
+        scrollToTopButton.classList.remove("opacity-100");
+      }
+    });
 
-  // Toggle dark mode
-  themeToggle.addEventListener("click", () => {
-    const isDarkMode = htmlElement.classList.toggle("dark"); // Add/remove 'dark' class on <html>
-    themeLabel.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
 
-    // Save theme to localStorage
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  });
+  // --- 4. Tahun Dinamis di Footer ---
+  const currentYearSpan = document.getElementById("current-year");
+  if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+  }
 });
