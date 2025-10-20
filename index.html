@@ -1,1081 +1,670 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio: Raditya Putra Loviartha</title>
-    <link
-      rel="shortcut icon"
-      href="./images/favicon.jpg"
-      type="image/x-icon"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body
-    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300 font-sans"
-  >
-    <nav
-      class="bg-white/80 dark:bg-gray-900/80 shadow-lg py-4 fixed top-0 w-full z-50 backdrop-blur-md"
-      data-aos="fade-down"
-    >
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center">
-          <a href="#" class="flex items-center space-x-2">
-            <span class="text-xl font-bold text-gray-900 dark:text-white"
-              >RPLVRTHA</span
-            >
-          </a>
-          <div class="flex items-center space-x-4">
 
-            <button
-              id="theme-toggle"
-              class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
-              aria-label="Toggle dark mode"
-            >
-              <svg
-                id="theme-icon-sun"
-                class="w-5 h-5 hidden"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 12a5 5 0 100-10 5 5 0 000 10z"
-                ></path>
-              </svg>
-              <svg
-                id="theme-icon-moon"
-                class="w-5 h-5 hidden"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                ></path>
-              </svg>
-            </button>
-            <button
-              id="nav-toggle"
-              class="block md:hidden text-gray-900 dark:text-white focus:outline-none"
-              aria-label="Toggle navigation"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
-            <ul
-              id="nav-menu"
-              class="hidden md:flex md:items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static bg-transparent backdrop-blur-md md:bg-transparent md:backdrop-blur-none w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none p-4 md:p-0 transition-all duration-300 z-40"
-            >
-              <li>
-                <a
-                  href="#tentang"
-                  class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                  >Tentang</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#riwayat"
-                  class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                  >Riwayat</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#skill"
-                  class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                  >Skill</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#proyek"
-                  class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                  >Proyek</a
-                >
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio: Raditya Putra Loviartha</title>
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300 font-sans">
+  <nav class="bg-white/80 dark:bg-gray-900/80 shadow-lg py-4 fixed top-0 w-full z-50 backdrop-blur-md"
+    data-aos="fade-down">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="flex items-center space-x-2">
+          <span class="text-xl font-bold text-gray-900 dark:text-white">RPLVRTHA</span>
+        </a>
+        <div class="flex items-center space-x-4">
+
+          <button id="theme-toggle"
+            class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            aria-label="Toggle dark mode">
+            <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 12a5 5 0 100-10 5 5 0 000 10z">
+              </path>
+            </svg>
+            <svg id="theme-icon-moon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+          <button id="nav-toggle" class="block md:hidden text-gray-900 dark:text-white focus:outline-none"
+            aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <ul id="nav-menu"
+            class="hidden md:flex md:items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static bg-white/80 dark:bg-gray-900/80 backdrop-blur-md md:bg-transparent md:backdrop-blur-none w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none p-4 md:p-0 transition-all duration-300 z-40">
+            <li>
+              <a href="#tentang"
+                class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400">Tentang</a>
+            </li>
+            <li>
+              <a href="#riwayat"
+                class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400">Riwayat</a>
+            </li>
+            <li>
+              <a href="#skill"
+                class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400">Skill</a>
+            </li>
+            <li>
+              <a href="#proyek"
+                class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400">Proyek</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section
-      id="hero"
-      class="min-h-screen flex items-center justify-center pt-20 bg-gray-100 dark:bg-gray-900"
-    >
-      <div
-        class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-10"
-      >
-        <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
-          <h1
-            class="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
-          >
-            Raditya Putra Loviartha
-          </h1>
-          <p
-            class="text-xl sm:text-2xl md:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-6"
-          >
-            Full-Stack Developer
-          </p>
-          <p
-            class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0"
-          >
-            Antusiasme tinggi terhadap dunia IT, mengubah ide kompleks menjadi
-            solusi web dan mobile yang elegan dan efisien.
-          </p>
-          <div class="flex justify-center md:justify-start space-x-4">
-            <a
-              href="https://www.linkedin.com/in/rplvrtha"
-              target="_blank"
-              class="bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 text-white p-3 rounded-full transition-all duration-200"
-              aria-label="LinkedIn"
-            >
-              <img
-                src="./images/sosmed/linkedin-ico.png"
-                alt="LinkedIn"
-                class="w-6 h-6"
-              />
-            </a>
-            <a
-              href="https://github.com/rplvrtha"
-              target="_blank"
-              class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full transition-all duration-200"
-              aria-label="GitHub"
-            >
-              <img
-                src="./images/sosmed/github-ico.png"
-                alt="GitHub"
-                class="w-6 h-6"
-              />
-            </a>
-            <a
-              href="https://instagram.com/rplvrtha"
-              target="_blank"
-              class="bg-gray-200 dark:bg-gray-700 hover:bg-pink-600 text-white p-3 rounded-full transition-all duration-200"
-              aria-label="Instagram"
-            >
-              <img
-                src="./images/sosmed/insta-ico.png"
-                alt="Instagram"
-                class="w-6 h-6"
-              />
-            </a>
-            <a
-              href="https://medium.com/@rplvrtha"
-              target="_blank"
-              class="bg-gray-200 dark:bg-gray-700 hover:bg-black text-white p-3 rounded-full transition-all duration-200"
-              aria-label="Medium"
-            >
-              <img
-                src="./images/sosmed/medium-ico.svg"
-                alt="Medium"
-                class="w-6 h-6"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="md:w-1/2 flex justify-center"
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <div class="relative">
-            <img
-              src="./images/favicon.jpg"
-              alt="Foto Profil"
-              class="rounded-full h-56 w-56 sm:h-64 sm:w-64 md:h-80 md:w-80 object-cover shadow-2xl z-10 relative"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-2xl opacity-50 z-0"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tentang" class="py-20 pt-24 bg-white dark:bg-gray-800">
-      <div class="container mx-auto px-4">
-        <h2
-          class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
-          data-aos="fade-up"
-        >
-          Tentang Saya
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right">
-            <img
-              src="./images/image.jpeg"
-              alt="Tentang Saya"
-              class="rounded-lg shadow-xl w-full"
-            />
-          </div>
-          <div data-aos="fade-left" data-aos-delay="100">
-            <p
-              class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify"
-            >
-              Perkenalkan, saya <strong>Raditya Putra Loviartha</strong>,
-              seorang <strong>Full-Stack Developer</strong> dengan dasar kokoh
-              dari <strong>SMKN 5 Surakarta</strong>. Saya memiliki keahlian
-              front-end (HTML, CSS, JS, ReactJS) dan back-end (PHP, Node.js,
-              Laravel).
-            </p>
-            <p
-              class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify"
-            >
-              Saya juga familiar dengan pengembangan aplikasi mobile
-              menggunakan Flutter dan Java (Android), serta memiliki pemahaman
-              baik dalam pengelolaan database MySQL.
-            </p>
-            <p
-              class="text-gray-700 dark:text-gray-300 leading-relaxed text-justify"
-            >
-              Saya bersemangat untuk terus belajar, menghadapi tantangan baru,
-              dan berkontribusi dalam tim dinamis untuk menghasilkan solusi
-              teknologi berkualitas tinggi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="riwayat" class="py-20 pt-24 bg-gray-100 dark:bg-gray-900">
-      <div class="container mx-auto px-4">
-        <h2
-          class="text-3xl font-bold text-gray-900 dark:text-white mb-16 text-center"
-          data-aos="fade-up"
-        >
-          Riwayat & Pencapaian
-        </h2>
-
-        <div class="relative max-w-3xl mx-auto">
-          <div
-            class="absolute left-1/2 top-0 w-1 h-full bg-gray-300 dark:bg-gray-700 -translate-x-1/2"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          ></div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center">
-              <div class="md:w-1/2 md:pr-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-blue-500"
-                >
-                  <p class="text-sm text-blue-500 dark:text-blue-400">
-                    Agustus 2025 — Sekarang
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Full-Stack Developer
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    PT Ifars Pharmaceutical Laboratories
-                  </p>
-                  <p
-                    class="text-gray-700 dark:text-gray-500 mt-3 text-sm italic"
-                  >
-                    Pengembangan dan pemeliharaan aplikasi internal perusahaan
-                    menggunakan PHP (Yii2, Laravel) dan JavaScript (ReactJS).
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center md:flex-row-reverse">
-              <div class="md:w-1/2 md:pl-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-blue-500 md:border-r-0 md:border-l-4"
-                >
-                  <p class="text-sm text-blue-500 dark:text-blue-400">
-                    Mei 2025 — Juli 2025 (3 Bulan)
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Hardware Technician
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    PT Ifars Pharmaceutical Laboratories
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center">
-              <div class="md:w-1/2 md:pr-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-blue-500"
-                >
-                  <p class="text-sm text-blue-500 dark:text-blue-400">
-                    Sep 2024 — Feb 2025
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Magang Full-Stack Developer
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    Edusoft Center
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center md:flex-row-reverse">
-              <div class="md:w-1/2 md:pl-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-purple-500 md:border-r-0 md:border-l-4"
-                >
-                  <p class="text-sm text-purple-500 dark:text-purple-400">
-                    Maret 2024
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Juara 3 LKS Tingkat Kota Surakarta
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    IT Software Solution for Business
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2l4.5.4a1 1 0 01.554 1.705l-3.45 3.03.967 4.354a1 1 0 01-1.482 1.06L12 15.347l-3.82 2.396a1 1 0 01-1.482-1.06l.967-4.354-3.45-3.03a1 1 0 01.554-1.705l4.5-.4L11.033 2.744A1 1 0 0112 2z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center">
-              <div class="md:w-1/2 md:pr-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-green-500"
-                >
-                  <p class="text-sm text-green-500 dark:text-green-400">
-                    2023 - 2024
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Kelas Vokasi UGM
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    Pelatihan Android, Laravel, dan ReactJS.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.29l-1.606 2.89a1 1 0 00.867 1.492h13.477a1 1 0 00.867-1.492L15 8.29l2.606-1.37a1 1 0 000-1.84l-7-3zM3.05 6.49l7 3.5 7-3.5-7-3.5-7 3.5z"
-                  />
-                  <path
-                    d="M12 11c0 3.86-1.5 4-1.5 4H9.5s-1.5-.14-1.5-4C8 9.86 8 8.71 8 8.71h4c0 0 0 1.15 0 2.29z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center md:flex-row-reverse">
-              <div class="md:w-1/2 md:pl-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-green-500 md:border-r-0 md:border-l-4"
-                >
-                  <p class="text-sm text-green-500 dark:text-green-400">
-                    2022-2025
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    SMK Negeri 5 Surakarta
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    Rekayasa Perangkat Lunak
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.29l-1.606 2.89a1 1 0 00.867 1.492h13.477a1 1 0 00.867-1.492L15 8.29l2.606-1.37a1 1 0 000-1.84l-7-3zM3.05 6.49l7 3.5 7-3.5-7-3.5-7 3.5z"
-                  />
-                  <path
-                    d="M12 11c0 3.86-1.5 4-1.5 4H9.5s-1.5-.14-1.5-4C8 9.86 8 8.71 8 8.71h4c0 0 0 1.15 0 2.29z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative mb-12" data-aos="fade-up">
-            <div class="md:flex items-center">
-              <div class="md:w-1/2 md:pr-8">
-                <div
-                  class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-yellow-500"
-                >
-                  <p class="text-sm text-yellow-500 dark:text-yellow-400">
-                    2023 - 2024
-                  </p>
-                  <h4
-                    class="text-xl font-semibold text-gray-900 dark:text-white mt-1"
-                  >
-                    Aktif Organisasi
-                  </h4>
-                  <p class="text-md text-gray-600 dark:text-gray-400">
-                    OSIS & Pramuka (Dewan Ambalan)
-                  </p>
-                </div>
-              </div>
-              <div
-                class="absolute left-1/2 top-4 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0118 15v3h-2zM4 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 016 15v3H4z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skill" class="py-20 pt-24 bg-white dark:bg-gray-800">
-      <div class="container mx-auto px-4">
-        <h2
-          class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
-          data-aos="fade-up"
-        >
-          Teknologi yang Dikuasai
-        </h2>
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center"
-        >
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="./images/skill/html.svg"
-              alt="HTML"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              HTML
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <img
-              src="./images/skill/css.svg"
-              alt="CSS"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              CSS
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="./images/skill/javascript.svg"
-              alt="JavaScript"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              JavaScript
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <img
-              src="./images/skill/php.svg"
-              alt="PHP"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              PHP
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <img
-              src="./images/skill/laravel.svg"
-              alt="Laravel"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Laravel
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="350"
-          >
-            <img
-              src="./images/skill/react.svg"
-              alt="React"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              React
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <img
-              src="./images/skill/nodejs.svg"
-              alt="Node.js"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Node.js
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="450"
-          >
-            <img
-              src="./images/skill/flutter.svg"
-              alt="Flutter"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Flutter
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <img
-              src="./images/skill/java.svg"
-              alt="Java"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Java
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="550"
-          >
-            <img
-              src="./images/skill/android.svg"
-              alt="Android"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Android
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <img
-              src="./images/skill/dart.svg"
-              alt="Dart"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Dart
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="650"
-          >
-            <img
-              src="./images/skill/sql.svg"
-              alt="SQL"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              SQL
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
-            <img
-              src="./images/skill/yii.svg"
-              alt="Yii"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Yii
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="750"
-          >
-            <img
-              src="./images/skill/alpine.svg"
-              alt="Alpine.js"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Alpine.js
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            <img
-              src="./images/skill/tailwind.svg"
-              alt="Tailwind CSS"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Tailwind
-            </h3>
-          </div>
-          <div
-            class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="850"
-          >
-            <img
-              src="./images/skill/bootstrap.svg"
-              alt="Bootstrap"
-              class="w-12 h-12 mx-auto mb-4 dark:invert"
-            />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Bootstrap
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyek" class="py-20 pt-24 bg-gray-100 dark:bg-gray-900">
-      <div class="container mx-auto px-4">
-        <h2
-          class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
-          data-aos="fade-up"
-        >
-          Proyek Saya
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="./images/project/aether.png"
-              alt="Aether Dash"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Aether Dash
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Dashboard admin modern yang dibuat menggunakan HTML, Tailwind
-                CSS, dan Alpine.js.
-              </p>
-              <a
-                href="https://rplvrtha.github.io/aether-dash"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="./images/project/kasqu.jpeg"
-              alt="KasQu"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Website KasQu
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Website admin pengelolaan kas berbasis Rest API.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/UangKasSite"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <img
-              src="./images/project/kasquapp.jpeg"
-              alt="KasQu App"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Aplikasi KasQu
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Aplikasi mobile (user) yang terhubung dengan Rest API KasQu.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/UangKasApp"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="./images/project/sipadu.jpeg"
-              alt="SIPADU"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                SIPADU
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Sistem Pengaduan dan Perijinan untuk SMKN 5 Surakarta.
-              </p>
-              <a
-                href="https://rpl5solo.net"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="./images/project/gaiaart.jpeg"
-              alt="GaiaArt"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                GaiaArt
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Aplikasi galeri online berbasis Flutter dan Rest API.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/galeriApp"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <img
-              src="./images/project/rapulo.jpeg"
-              alt="Rapulo"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Rapulo
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Framework PHP ringan (sedang dikembangkan) terinspirasi Laravel &
-                React.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/Rapulo"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="./images/project/retail.png"
-              alt="Toko Retail"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Toko Retail (UKK)
-              </h3>
-              <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
-                Aplikasi kasir UKK untuk manajemen transaksi dan diskon.
-              </p>
-              <a
-                href="https://github.com/rplvrtha/TokoRetail"
-                target="_blank"
-                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium"
-              >
-                Lihat Detail &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-white dark:bg-gray-900 py-10" data-aos="fade-up">
-      <div
-        class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0"
-      >
-        <div class="text-center md:text-left">
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            &copy; 2024 - <span id="current-year"></span> Raditya Putra Loviartha.
-          </p>
-        </div>
-        <div class="flex justify-center md:justify-end space-x-4">
-          <a
-            href="https://www.linkedin.com/in/rplvrtha"
-            target="_blank"
+  <section id="hero" class="min-h-screen flex items-center justify-center pt-20 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-10">
+      <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+          Raditya Putra Loviartha
+        </h1>
+        <p
+          class="text-xl sm:text-2xl md:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-6">
+          Full-Stack Developer
+        </p>
+        <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+          Antusiasme tinggi terhadap dunia IT, mengubah ide kompleks menjadi
+          solusi web dan mobile yang elegan dan efisien.
+        </p>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="https://www.linkedin.com/in/rplvrtha" target="_blank"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 text-white p-3 rounded-full transition-all duration-200"
-            aria-label="LinkedIn"
-          >
-            <img
-              src="./images/sosmed/linkedin-ico.png"
-              alt="LinkedIn"
-              class="w-6 h-6"
-            />
+            aria-label="LinkedIn">
+            <img src="./images/sosmed/linkedin-ico.png" alt="LinkedIn" class="w-6 h-6" />
           </a>
-          <a
-            href="https://github.com/rplvrtha"
-            target="_blank"
+          <a href="https://github.com/rplvrtha" target="_blank"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full transition-all duration-200"
-            aria-label="GitHub"
-          >
-            <img
-              src="./images/sosmed/github-ico.png"
-              alt="GitHub"
-              class="w-6 h-6"
-            />
+            aria-label="GitHub">
+            <img src="./images/sosmed/github-ico.png" alt="GitHub" class="w-6 h-6" />
           </a>
-          <a
-            href="https://instagram.com/rplvrtha"
-            target="_blank"
+          <a href="https://instagram.com/rplvrtha" target="_blank"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-pink-600 text-white p-3 rounded-full transition-all duration-200"
-            aria-label="Instagram"
-          >
-            <img
-              src="./images/sosmed/insta-ico.png"
-              alt="Instagram"
-              class="w-6 h-6"
-            />
+            aria-label="Instagram">
+            <img src="./images/sosmed/insta-ico.png" alt="Instagram" class="w-6 h-6" />
+          </a>
+          <a href="https://medium.com/@rplvrtha" target="_blank"
+            class="bg-gray-200 dark:bg-gray-700 hover:bg-black text-white p-3 rounded-full transition-all duration-200"
+            aria-label="Medium">
+            <img src="./images/sosmed/medium-ico.svg" alt="Medium" class="w-6 h-6" />
           </a>
         </div>
       </div>
-    </footer>
 
-    <button
-      id="scroll-to-top"
-      class="hidden fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg focus:outline-none transition-opacity duration-300"
-      aria-label="Scroll to top"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M5 15l7-7 7 7"
-        />
-      </svg>
-    </button>
+      <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="relative">
+          <img src="./images/favicon.jpg" alt="Foto Profil"
+            class="rounded-full h-56 w-56 sm:h-64 sm:w-64 md:h-80 md:w-80 object-cover shadow-2xl z-10 relative" />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-2xl opacity-50 z-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <section id="tentang" class="py-20 pt-24 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center" data-aos="fade-up">
+        Tentang Saya
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <img src="./images/image.jpeg" alt="Tentang Saya" class="rounded-lg shadow-xl w-full" />
+        </div>
+        <div data-aos="fade-left" data-aos-delay="100">
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
+            Perkenalkan, saya <strong>Raditya Putra Loviartha</strong>,
+            seorang <strong>Full-Stack Developer</strong> dengan dasar kokoh
+            dari <strong>SMKN 5 Surakarta</strong>. Saya memiliki keahlian
+            front-end (HTML, CSS, JS, ReactJS) dan back-end (PHP, Node.js,
+            Laravel).
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
+            Saya juga familiar dengan pengembangan aplikasi mobile
+            menggunakan Flutter dan Java (Android), serta memiliki pemahaman
+            baik dalam pengelolaan database MySQL.
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+            Saya bersemangat untuk terus belajar, menghadapi tantangan baru,
+            dan berkontribusi dalam tim dinamis untuk menghasilkan solusi
+            teknologi berkualitas tinggi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="./js/script.js"></script>
-  </body>
+  <section id="riwayat" class="py-20 pt-24 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-16 text-center" data-aos="fade-up">
+        Riwayat & Pencapaian
+      </h2>
+
+      <div class="relative max-w-3xl mx-auto">
+        <div class="absolute left-1/2 top-0 w-1 h-full bg-gray-300 dark:bg-gray-700 -translate-x-1/2" data-aos="zoom-in"
+          data-aos-delay="300"></div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-blue-500">
+                <p class="text-sm text-blue-500 dark:text-blue-400">
+                  Agustus 2025 — Sekarang
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Full-Stack Developer
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  PT Ifars Pharmaceutical Laboratories
+                </p>
+                <p class="text-gray-700 dark:text-gray-500 mt-3 text-sm italic">
+                  Pengembangan dan pemeliharaan aplikasi internal perusahaan
+                  menggunakan PHP (Yii2, Laravel) dan JavaScript (ReactJS).
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center md:flex-row-reverse">
+            <div class="md:w-1/2 md:pl-8">
+              <div
+                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-blue-500 md:border-r-0 md:border-l-4">
+                <p class="text-sm text-blue-500 dark:text-blue-400">
+                  Mei 2025 — Juli 2025 (3 Bulan)
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Hardware Technician
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  PT Ifars Pharmaceutical Laboratories
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-blue-500">
+                <p class="text-sm text-blue-500 dark:text-blue-400">
+                  Sep 2024 — Feb 2025
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Magang Full-Stack Developer
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  Edusoft Center
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm5-1a1 1 0 00-1-1H9a1 1 0 00-1 1v1h4V5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center md:flex-row-reverse">
+            <div class="md:w-1/2 md:pl-8">
+              <div
+                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-purple-500 md:border-r-0 md:border-l-4">
+                <p class="text-sm text-purple-500 dark:text-purple-400">
+                  Maret 2024
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Juara 3 LKS Tingkat Kota Surakarta
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  IT Software Solution for Business
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2l4.5.4a1 1 0 01.554 1.705l-3.45 3.03.967 4.354a1 1 0 01-1.482 1.06L12 15.347l-3.82 2.396a1 1 0 01-1.482-1.06l.967-4.354-3.45-3.03a1 1 0 01.554-1.705l4.5-.4L11.033 2.744A1 1 0 0112 2z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-green-500">
+                <p class="text-sm text-green-500 dark:text-green-400">
+                  2023 - 2024
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Kelas Vokasi UGM
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  Pelatihan Android, Laravel, dan ReactJS.
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.29l-1.606 2.89a1 1 0 00.867 1.492h13.477a1 1 0 00.867-1.492L15 8.29l2.606-1.37a1 1 0 000-1.84l-7-3zM3.05 6.49l7 3.5 7-3.5-7-3.5-7 3.5z" />
+                <path d="M12 11c0 3.86-1.5 4-1.5 4H9.5s-1.5-.14-1.5-4C8 9.86 8 8.71 8 8.71h4c0 0 0 1.15 0 2.29z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center md:flex-row-reverse">
+            <div class="md:w-1/2 md:pl-8">
+              <div
+                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-r-4 border-green-500 md:border-r-0 md:border-l-4">
+                <p class="text-sm text-green-500 dark:text-green-400">
+                  2022-2025
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  SMK Negeri 5 Surakarta
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  Rekayasa Perangkat Lunak
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.29l-1.606 2.89a1 1 0 00.867 1.492h13.477a1 1 0 00.867-1.492L15 8.29l2.606-1.37a1 1 0 000-1.84l-7-3zM3.05 6.49l7 3.5 7-3.5-7-3.5-7 3.5z" />
+                <path d="M12 11c0 3.86-1.5 4-1.5 4H9.5s-1.5-.14-1.5-4C8 9.86 8 8.71 8 8.71h4c0 0 0 1.15 0 2.29z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-12" data-aos="fade-up">
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border-l-4 border-yellow-500">
+                <p class="text-sm text-yellow-500 dark:text-yellow-400">
+                  2023 - 2024
+                </p>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mt-1">
+                  Aktif Organisasi
+                </h4>
+                <p class="text-md text-gray-600 dark:text-gray-400">
+                  OSIS & Pramuka (Dewan Ambalan)
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute left-1/2 top-4 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center -translate-x-1/2 mt-4 md:mt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0118 15v3h-2zM4 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 016 15v3H4z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill" class="py-20 pt-24 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center" data-aos="fade-up">
+        Teknologi yang Dikuasai
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/skill/html.svg" alt="HTML" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            HTML
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="150">
+          <img src="./images/skill/css.svg" alt="CSS" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            CSS
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/skill/javascript.svg" alt="JavaScript" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            JavaScript
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="250">
+          <img src="./images/skill/php.svg" alt="PHP" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            PHP
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/skill/laravel.svg" alt="Laravel" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Laravel
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="350">
+          <img src="./images/skill/react.svg" alt="React" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            React
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="400">
+          <img src="./images/skill/nodejs.svg" alt="Node.js" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Node.js
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="450">
+          <img src="./images/skill/flutter.svg" alt="Flutter" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Flutter
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="500">
+          <img src="./images/skill/java.svg" alt="Java" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Java
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="550">
+          <img src="./images/skill/android.svg" alt="Android" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Android
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="600">
+          <img src="./images/skill/dart.svg" alt="Dart" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Dart
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="650">
+          <img src="./images/skill/sql.svg" alt="SQL" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            SQL
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="700">
+          <img src="./images/skill/yii.svg" alt="Yii" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Yii
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="750">
+          <img src="./images/skill/alpine.svg" alt="Alpine.js" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Alpine.js
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="800">
+          <img src="./images/skill/tailwind.svg" alt="Tailwind CSS" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Tailwind
+          </h3>
+        </div>
+        <div
+          class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="850">
+          <img src="./images/skill/bootstrap.svg" alt="Bootstrap" class="w-12 h-12 mx-auto mb-4 dark:invert" />
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Bootstrap
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek" class="py-20 pt-24 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center" data-aos="fade-up">
+        Proyek Saya
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/project/aether.png" alt="Aether Dash" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Aether Dash
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Dashboard admin modern yang dibuat menggunakan HTML, Tailwind
+              CSS, dan Alpine.js.
+            </p>
+            <a href="https://rplvrtha.github.io/aether-dash" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/project/kasqu.jpeg" alt="KasQu" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Website KasQu
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Website admin pengelolaan kas berbasis Rest API.
+            </p>
+            <a href="https://github.com/rplvrtha/UangKasSite" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/project/kasquapp.jpeg" alt="KasQu App" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Aplikasi KasQu
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Aplikasi mobile (user) yang terhubung dengan Rest API KasQu.
+            </p>
+            <a href="https://github.com/rplvrtha/UangKasApp" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/project/sipadu.jpeg" alt="SIPADU" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              SIPADU
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Sistem Pengaduan dan Perijinan untuk SMKN 5 Surakarta.
+            </p>
+            <a href="https://rpl5solo.net" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/project/gaiaart.jpeg" alt="GaiaArt" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              GaiaArt
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Aplikasi galeri online berbasis Flutter dan Rest API.
+            </p>
+            <a href="https://github.com/rplvrtha/galeriApp" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/project/rapulo.jpeg" alt="Rapulo" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Rapulo
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Framework PHP ringan (sedang dikembangkan) terinspirasi Laravel &
+              React.
+            </p>
+            <a href="https://github.com/rplvrtha/Rapulo" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition-all duration-300 hover:shadow-blue-500/30"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/project/retail.png" alt="Toko Retail" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Toko Retail (UKK)
+            </h3>
+            <p class="text-gray-700 dark:text-gray-400 text-sm mb-4">
+              Aplikasi kasir UKK untuk manajemen transaksi dan diskon.
+            </p>
+            <a href="https://github.com/rplvrtha/TokoRetail" target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium">
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-gray-900 py-10" data-aos="fade-up">
+    <div
+      class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0">
+      <div class="text-center md:text-left">
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          &copy; 2024 - <span id="current-year"></span> Raditya Putra Loviartha.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end space-x-4">
+        <a href="https://www.linkedin.com/in/rplvrtha" target="_blank"
+          class="bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 text-white p-3 rounded-full transition-all duration-200"
+          aria-label="LinkedIn">
+          <img src="./images/sosmed/linkedin-ico.png" alt="LinkedIn" class="w-6 h-6" />
+        </a>
+        <a href="https://github.com/rplvrtha" target="_blank"
+          class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full transition-all duration-200"
+          aria-label="GitHub">
+          <img src="./images/sosmed/github-ico.png" alt="GitHub" class="w-6 h-6" />
+        </a>
+        <a href="https://instagram.com/rplvrtha" target="_blank"
+          class="bg-gray-200 dark:bg-gray-700 hover:bg-pink-600 text-white p-3 rounded-full transition-all duration-200"
+          aria-label="Instagram">
+          <img src="./images/sosmed/insta-ico.png" alt="Instagram" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-to-top"
+    class="hidden fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg focus:outline-none transition-opacity duration-300"
+    aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
